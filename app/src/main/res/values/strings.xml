@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Samojlov_AV_Homework_Module_16_number_3_Koala</string>
+    <!--TODO Menu-->
+    <string name="toolbar_title">Мои контакты</string>
+    <string name="toolbar_subtitle">Mod. 16 № 4</string>
+    <string name="exit">Exit</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="toast_exit">Приложение закрыто</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Phone Book Item -->
+    <string name="nameTV_Hint">Имя</string>
+    <string name="phoneTV_Hint">номер телефона</string>
+    <string name="permission_call_phone_else_toast">В разрешении отказано</string>
+    <string name="permissionContact_true_Toast">Получен доступ к контактам</string>
+    <!-- TODO: SMS Fragment -->
+    <string name="phoneSMSTV_Hint">телефон</string>
+    <string name="smsTextET_Hint">Сообщение</string>
+    <string name="smsSendBT_BT">Отправить</string>
+    <string name="sendSMS_Toast_true">Message Sent</string>
+    <string name="sendSMS_Toast_false">Please enter all the data..</string>
+    <!-- TODO: Phone Book Fragment -->
+    <string name="nameContactsEditET_Hint">Имя</string>
+    <string name="phoneContactsEditET_Hint">телефон</string>
+    <string name="addContactBT_Text">Добавить</string>
+    <!-- TODO: Search Fragment -->
+    <string name="searchContactBT_Text">Найти</string>
+    <string name="permissionEditContact_Toast_true">Запись конатктов разрешена</string>
+    <string name="addContacts_Toast">%1$s добавлен</string>
+    <string name="addContacts_Exeption">Exeption</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TODO: Overall dimensions-->
+    <dimen name="layout_width">0dp</dimen>
+    <dimen name="minHeight">48dp</dimen>
+    <dimen name="padding">8dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <!--TODO: CardView-->
+    <dimen name="margin_CardVieW">8dp</dimen>
+    <dimen name="cardCornerRadius">6dp</dimen>
+    <dimen name="cardElevation">6dp</dimen>
+    <!--TODO: Phone Book Fragment-->
+    <dimen name="button_textSize">25sp</dimen>
+    <dimen name="editText_textSize">20sp</dimen>
+    <dimen name="button_cornerRadius">16dp</dimen>
+    <dimen name="button_iconSize">48dp</dimen>
+    <dimen name="button_strokeWidth">1dp</dimen>
+    <dimen name="button_margin">50dp</dimen>
+    <!-- TODO: Phone Book Item -->
+    <dimen name="name_phone_book_textSize">20sp</dimen>
+    <dimen name="phone_phone_book_textSize">15sp</dimen>
+    <dimen name="phone_phone_icon_size">48dp</dimen>
+    <dimen name="phone_phone_marginTop_icon">16dp</dimen>
+    <!-- TODO: SMS Book Item -->
+    <dimen name="sms_padding">16dp</dimen>
+    <dimen name="sms_name_textSize">30sp</dimen>
+    <dimen name="sms_phone_textSize">20sp</dimen>
+    <dimen name="sms_margin_Bottom">8dp</dimen>
+    <dimen name="sms_minHeight_text">200dp</dimen>
+    <dimen name="button_elevation">6dp</dimen>
+
+</resources>

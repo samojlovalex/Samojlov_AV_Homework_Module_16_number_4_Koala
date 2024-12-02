@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.PhoneBookFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerEditContactsCW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        app:cardCornerRadius="@dimen/cardCornerRadius"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/cardElevation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/nameContactsEditET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:hint="@string/nameContactsEditET_Hint"
+                android:inputType="text"
+                android:minHeight="@dimen/minHeight"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Grey"
+                android:textSize="@dimen/editText_textSize"></EditText>
+            <EditText
+                android:id="@+id/phoneContactsEditET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:hint="@string/phoneContactsEditET_Hint"
+                android:inputType="text"
+                android:minHeight="@dimen/minHeight"
+                android:textColor="@color/black"
+                android:textColorHint="@color/Grey"
+                android:textSize="@dimen/editText_textSize"></EditText>
+
+            <Button
+                android:id="@+id/addContactBT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/Blue"
+                android:textColor="@color/white"
+                android:text="@string/addContactBT_Text"
+                android:layout_gravity="center"></Button>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactListRV"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_width"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/containerEditContactsCW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/phone_book_item"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

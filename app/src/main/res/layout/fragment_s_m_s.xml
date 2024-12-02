@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragments.SMSFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/sms_padding">
+
+        <TextView
+            android:id="@+id/nameSMSTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sms_margin_Bottom"
+            android:layout_marginRight="@dimen/sms_margin_Bottom"
+            android:layout_marginBottom="@dimen/sms_margin_Bottom"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="Имя"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/sms_name_textSize"
+            android:textStyle="italic"></TextView>
+
+        <TextView
+            android:id="@+id/phoneSMSTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sms_margin_Bottom"
+            android:layout_marginRight="@dimen/sms_margin_Bottom"
+            android:layout_marginBottom="@dimen/sms_margin_Bottom"
+            android:hint="@string/phoneSMSTV_Hint"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/sms_phone_textSize"></TextView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/containerTextSMSCW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sms_margin_Bottom"
+            android:layout_marginRight="@dimen/sms_margin_Bottom"
+            android:layout_marginBottom="@dimen/sms_margin_Bottom"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/cardCornerRadius"
+            app:cardElevation="@dimen/cardElevation">
+
+            <EditText
+                android:id="@+id/smsTextET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:hint="@string/smsTextET_Hint"
+                android:inputType="text"
+                android:minHeight="@dimen/sms_minHeight_text"
+                android:textColor="@color/Blue"
+                android:textColorHint="@color/Grey"
+                android:textSize="@dimen/sms_phone_textSize"></EditText>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/smsSendBT"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/sms_margin_Bottom"
+            android:layout_marginRight="@dimen/sms_margin_Bottom"
+            android:elevation="@dimen/button_elevation"
+            android:text="@string/smsSendBT_BT"
+            android:textColor="@color/Blue"
+            android:textSize="@dimen/button_textSize"
+            app:backgroundTint="@color/white"
+            app:backgroundTintMode="src_over"
+            app:cornerRadius="@dimen/button_cornerRadius"
+            app:icon="@drawable/sms_icon"
+            app:iconSize="@dimen/button_iconSize"
+            app:iconTint="@color/Blue"
+            app:rippleColor="@color/black"
+            app:strokeColor="@color/Blue"
+            app:strokeWidth="@dimen/button_strokeWidth"
+            app:tint="@color/white"></com.google.android.material.button.MaterialButton>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
