@@ -73,7 +73,7 @@ class SearchFragment : Fragment() {
 
     private fun filterContactS() {
         filterContactsMobileList.clear()
-        val searchResult = searchContactsEditET.text.toString().trim()
+        val searchResult = searchContactsEditET.text.toString().trim().lowercase()
         if (contactsModelList != null) {
             for (result in contactsModelList!!) {
                 if (searchResult in result.name.lowercase()) {
